@@ -43,13 +43,14 @@ type SmartContract struct {
 
 // Define the letter of credit
 type LetterOfCredit struct {
-	LCId			string		`json:"lcId"`
-	ExpiryDate		string		`json:"expiryDate"`
-	Buyer    string   `json:"buyer"`
-	Bank		string		`json:"bank"`
-	Seller		string		`json:"seller"`
-	Amount			int		`json:"amount"`
-	Status			string		`json:"status"`
+	ClaimID			string		`json:"ClaimID"`
+	PolicyNumber            string		`json:"PolicyNumber"`
+	EntryDate		string		`json:"EntryDate"`
+	InsuranceCompany    	string   	`json:"InsuranceCompany"`
+	HospitalName		string		`json:"HospitalName"`
+	ProviderName		string		`json:"ProviderName"`
+	ClaimAmount		int		`json:"ClaimAmount"`
+	ClaimStatus		string		`json:"ClaimStatus"`
 }
 
 
