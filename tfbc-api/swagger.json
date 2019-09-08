@@ -1,9 +1,9 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Swagger HLF Trade Finance.",
+        "description": "Swagger Insurance Claim Application.",
         "version": "1.0.0",
-        "title": "Swagger HLF Trade Finance",
+        "title": "Swagger Insurance Claim Application",
         
         "contact": {
             "email": ""
@@ -20,12 +20,12 @@
         "http"
     ],
     "paths": {
-        "/requestLC": {
+        "/requestClaim": {
             "post": {
                 
-                "summary": "Request LC",
-                "description": "Request LC",
-                "operationId": "requestLC",
+                "summary": "Request Claim",
+                "description": "Request Claim",
+                "operationId": "requestClaim",
                 "consumes": [
                     "application/json"
                 ],
@@ -187,38 +187,59 @@
         "LC": {
             "type": "object",
             "properties": {
-                "lcId": {
+                "ClaimID": {
                     "type": "string",
-                    "description": "LC ID"
+                    "description": "Claim ID"
                 },
-                "buyer": {
+                "PolicyNumber": {
                     "type": "string",
-                    "description": "Buyer ID"
+                    "description": "Policy Number"
                 },
-                "bank": {
+                "EntryDate": {
                     "type": "string",
-                    "description": "Bank ID"
+                    "description": "Entry Date"
                 },
-                "seller": {
+                "InsuranceCompany": {
                     "type": "string",
-                    "description": "Seller ID"
+                    "description": "Insurance Company"
                 },
-                "expiryDate": {
+                "PlaceOfService": {
                     "type": "string",
-                    "description": "LC Expiry date"
+                    "description": "Place Of Service"
                 },
-                "amount": {
+                "ProviderName": {
                     "type": "string",
-                    "description": "LC Amount"
+                    "description": "Provider Name"
+                },
+                "ClaimAmount": {
+                    "type": "string",
+                    "description": "Claim Amount"
+                },
+                "DateOfService": {
+                    "type": "string",
+                    "description": "Date Of Service"
+                },
+                "DiagnosCode": {
+                    "type": "string",
+                    "description": "Diagnos Code"
+                },
+                "Procedure Code": {
+                    "type": "string",
+                    "description": "Procedure Code"
+                },
+                "TypeOfService": {
+                    "type": "string",
+                    "description": "Type Of Service"
                 }
+
             }
         },
         "LCID": {
             "type": "object",
             "properties": {
-                "lcId": {
+                "ClaimID": {
                     "type": "string",
-                    "description": "LC ID"
+                    "description": "Claim ID"
                 }
             }
         }
