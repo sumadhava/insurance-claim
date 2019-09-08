@@ -123,7 +123,7 @@ func (s *SmartContract) requestClaim(APIstub shim.ChaincodeStubInterface, args [
 	}
 
 
-	LC := SmartContract{ClaimID: ClaimID, PolicyNumber: PolicyNumber, EntryDate: EntryDate, InsuranceCompany: InsuranceCompany, PlaceOfService: PlaceOfService,	ProviderName: ProviderName, ClaimAmount: ClaimAmount, DateOfService: DateOfService, DiagnosCode: DiagnosCode, ProcedureCode: ProcedureCode,	TypeOfService: TypeOfService, ClaimStatus: "Requested"}
+	LC := InsuranceClaim{ClaimID: ClaimID, PolicyNumber: PolicyNumber, EntryDate: EntryDate, InsuranceCompany: InsuranceCompany, PlaceOfService: PlaceOfService,	ProviderName: ProviderName, ClaimAmount: ClaimAmount, DateOfService: DateOfService, DiagnosCode: DiagnosCode, ProcedureCode: ProcedureCode,	TypeOfService: TypeOfService, ClaimStatus: "Requested"}
 	
 	LCBytes, err := json.Marshal(LC)
     APIstub.PutState(ClaimID,LCBytes)
@@ -140,7 +140,7 @@ func (s *SmartContract) approveClaim(APIstub shim.ChaincodeStubInterface, args [
 	
 	LCAsBytes, _ := APIstub.GetState(ClaimID)
 
-	var lc SmartContract
+	var lc InsuranceClaim
 
 	err := json.Unmarshal(LCAsBytes, &lc)
 
@@ -150,7 +150,7 @@ func (s *SmartContract) approveClaim(APIstub shim.ChaincodeStubInterface, args [
 
 
 	//LC := SmartContract{ClaimID: lc.ClaimID, ExpiryDate: lc.ExpiryDate, Buyer: lc.Buyer, Bank: lc.Bank, Seller: lc.Seller, Amount: lc.Amount, Status: "Issued"}
-	LC := SmartContract{ClaimID: ClaimID, PolicyNumber: PolicyNumber, EntryDate: EntryDate, InsuranceCompany: InsuranceCompany, PlaceOfService: PlaceOfService,	ProviderName: ProviderName, ClaimAmount: ClaimAmount, DateOfService: DateOfService, DiagnosCode: DiagnosCode, ProcedureCode: ProcedureCode,	TypeOfService: TypeOfService, ClaimStatus: "Approved"}
+	LC := InsuranceClaim{ClaimID: lc.ClaimID, PolicyNumber: lc.PolicyNumber, EntryDate: lc.EntryDate, InsuranceCompany: lc.InsuranceCompany, PlaceOfService: lc.PlaceOfService,	ProviderName: lc.ProviderName, ClaimAmount: lc.ClaimAmount, DateOfService: lc.DateOfService, DiagnosCode: lc.DiagnosCode, ProcedureCode: lc.ProcedureCode,	TypeOfService: lc.TypeOfService, ClaimStatus: "Approved"}
 
 	LCBytes, err := json.Marshal(LC)
 
@@ -173,7 +173,7 @@ func (s *SmartContract) rejectClaim(APIstub shim.ChaincodeStubInterface, args []
 
 	LCAsBytes, _ := APIstub.GetState(ClaimID)
 
-	var lc SmartContract
+	var lc InsuranceClaim
 
 	err := json.Unmarshal(LCAsBytes, &lc)
 
@@ -183,7 +183,7 @@ func (s *SmartContract) rejectClaim(APIstub shim.ChaincodeStubInterface, args []
 
 
 	//LC := SmartContract{ClaimID: lc.ClaimID, ExpiryDate: lc.ExpiryDate, Buyer: lc.Buyer, Bank: lc.Bank, Seller: lc.Seller, Amount: lc.Amount, Status: "Accepted"}
-	LC := SmartContract{ClaimID: ClaimID, PolicyNumber: PolicyNumber, EntryDate: EntryDate, InsuranceCompany: InsuranceCompany, PlaceOfService: PlaceOfService,	ProviderName: ProviderName, ClaimAmount: ClaimAmount, DateOfService: DateOfService, DiagnosCode: DiagnosCode, ProcedureCode: ProcedureCode,	TypeOfService: TypeOfService, ClaimStatus: "Rejected"}
+	LC := InsuranceClaim{ClaimID: lc.ClaimID, PolicyNumber: lc.PolicyNumber, EntryDate: lc.EntryDate, InsuranceCompany: lc.InsuranceCompany, PlaceOfService: lc.PlaceOfService,	ProviderName: lc.ProviderName, ClaimAmount: lc.ClaimAmount, DateOfService: lc.DateOfService, DiagnosCode: lc.DiagnosCode, ProcedureCode: lc.ProcedureCode,	TypeOfService: lc.TypeOfService, ClaimStatus: "Rejected"}
 
 
 	LCBytes, err := json.Marshal(LC)
@@ -209,7 +209,7 @@ func (s *SmartContract) adjudicateClaim(APIstub shim.ChaincodeStubInterface, arg
 
 	LCAsBytes, _ := APIstub.GetState(ClaimID)
 
-	var lc SmartContract
+	var lc InsuranceClaim
 
 	err := json.Unmarshal(LCAsBytes, &lc)
 
@@ -219,7 +219,7 @@ func (s *SmartContract) adjudicateClaim(APIstub shim.ChaincodeStubInterface, arg
 
 
 	//LC := SmartContract{ClaimID: lc.ClaimID, ExpiryDate: lc.ExpiryDate, Buyer: lc.Buyer, Bank: lc.Bank, Seller: lc.Seller, Amount: lc.Amount, Status: "Accepted"}
-	LC := SmartContract{ClaimID: ClaimID, PolicyNumber: PolicyNumber, EntryDate: EntryDate, InsuranceCompany: InsuranceCompany, PlaceOfService: PlaceOfService,	ProviderName: ProviderName, ClaimAmount: ClaimAmount, DateOfService: DateOfService, DiagnosCode: DiagnosCode, ProcedureCode: ProcedureCode,	TypeOfService: TypeOfService, ClaimStatus: "Processing"}
+	LC := InsuranceClaim{ClaimID: lc.ClaimID, PolicyNumber: lc.PolicyNumber, EntryDate: lc.EntryDate, InsuranceCompany: lc.InsuranceCompany, PlaceOfService: lc.PlaceOfService,	ProviderName: lc.ProviderName, ClaimAmount: lc.ClaimAmount, DateOfService: lc.DateOfService, DiagnosCode: lc.DiagnosCode, ProcedureCode: lc.ProcedureCode,	TypeOfService: lc.TypeOfService, ClaimStatus: "Processing"}
 
 
 	LCBytes, err := json.Marshal(LC)
@@ -245,7 +245,7 @@ func (s *SmartContract) acceptClaim(APIstub shim.ChaincodeStubInterface, args []
 
 	LCAsBytes, _ := APIstub.GetState(ClaimID)
 
-	var lc SmartContract
+	var lc InsuranceClaim
 
 	err := json.Unmarshal(LCAsBytes, &lc)
 
@@ -255,7 +255,7 @@ func (s *SmartContract) acceptClaim(APIstub shim.ChaincodeStubInterface, args []
 
 
 	//LC := SmartContract{ClaimID: lc.ClaimID, ExpiryDate: lc.ExpiryDate, Buyer: lc.Buyer, Bank: lc.Bank, Seller: lc.Seller, Amount: lc.Amount, Status: "Accepted"}
-	LC := SmartContract{ClaimID: ClaimID, PolicyNumber: PolicyNumber, EntryDate: EntryDate, InsuranceCompany: InsuranceCompany, PlaceOfService: PlaceOfService,	ProviderName: ProviderName, ClaimAmount: ClaimAmount, DateOfService: DateOfService, DiagnosCode: DiagnosCode, ProcedureCode: ProcedureCode,	TypeOfService: TypeOfService, ClaimStatus: "Accepted"}
+	LC := InsuranceClaim{ClaimID: lc.ClaimID, PolicyNumber: lc.PolicyNumber, EntryDate: lc.EntryDate, InsuranceCompany: lc.InsuranceCompany, PlaceOfService: lc.PlaceOfService,	ProviderName: lc.ProviderName, ClaimAmount: lc.ClaimAmount, DateOfService: lc.DateOfService, DiagnosCode: lc.DiagnosCode, ProcedureCode: lc.ProcedureCode,	TypeOfService: lc.TypeOfService, ClaimStatus: "Accepted"}
 
 
 	LCBytes, err := json.Marshal(LC)
