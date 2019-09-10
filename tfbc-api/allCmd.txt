@@ -1,0 +1,833 @@
+    1  curl -0
+    2  curl -o
+    3  curl -o 
+    4  curl -O https://storage.googleapis.com/golang/go1.11.2.linux-amd64.tar.gz
+    5  tar -xvf go1.11.2.linux-amd64.tar.gz
+    6  sudo mv go /usr/local
+    7  sudo nano ~/.profile
+    8  export GOPATH=$HOME/work
+    9  export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+   10  node -v
+   11  sudo apt install nodejs-legacy
+   12  sudo apt install curl
+   13  curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+   14  sudo apt install nodejs
+   15  sudo npm install npm@5.6.0 -g
+   16  sudo apt-get install python
+   17  sudo apt-get update
+   18  sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+   19  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   20  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   21     $(lsb_release -cs) \
+   22     stable"
+   23  sudo apt-get update
+   24  sudo apt-get install docker-ce
+   25  sudo apt-get install docker-compose
+   26  mkdir Fabric
+   27  cd Fabrid
+   28  cd Fabric
+   29  curl -sSL http://bit.ly/2ysbOFE | bash -s 1.3.0
+   30  ./byfn.sh down
+   31  cd fabric-samples/fabcar && ls
+   32  docker rm -f $(docker ps -aq)
+   33  docker network prune
+   34  npm install
+   35  sudo apt-get install build-essential g++
+   36  rm -r node_modules
+   37  npm install
+   38  ./startFabric.sh
+   39  dir
+   40  ./startFabric.sh 
+   41  dir
+   42  ./startFabric.sh 
+   43  sudo service docker start
+   44  ./startFabric.sh 
+   45  sudo snap install docker
+   46  ./startFabric.sh 
+   47  docker-machine start default
+   48  docker-machine ls
+   49  docker-machine create
+   50  docker-machine create KMR
+   51  docker-machine ls
+   52  ./startFabric.sh 
+   53  docker-machine start default
+   54  docker-machine start KMR
+   55  docker-machine create KMR
+   56  cls
+   57  clr
+   58  clrscr
+   59  dir
+   60  ./startFabric.sh 
+   61  dir
+   62  docker-machine ls
+   63  docker-machine create --driver virtualbox dev
+   64  $ sudo apt-get remove docker docker-engine
+   65  curl -sSL https://get.docker.com/ | sh
+   66  sudo
+   67  sudo usermod -aG docker user
+   68  cd fabric
+   69  dir
+   70  cd fabric
+   71  cd Fabric
+   72  dir
+   73  cd fabric-samples
+   74  docker rm -f $(docker ps -aq)
+   75  sudo docker rm -f $(docker ps -aq)
+   76  sudo docker rm -f $(sudo docker ps -aq)
+   77  npm install
+   78  dir
+   79  cd scripts
+   80  dir
+   81  cd..
+   82  cd \
+   83  dir
+   84  cd Fabric/
+   85  dir
+   86  cd fabric-samples/
+   87  dir
+   88  cd fabcar
+   89  dir
+   90  ./startFabric.sh 
+   91  docker -ls
+   92  docker-machine ls
+   93  dir
+   94  cd Fabric/
+   95  dir
+   96  cd fabric-samples/
+   97  dir
+   98  cd fabcar
+   99  dir
+  100  ./startFabric.sh 
+  101  docker-machine ls
+  102  sudo ./startFabric.sh
+  103  docker logs -f ca.example.com
+  104  npm install
+  105  sudo apt-get install build-essential g++
+  106  rm -r node_modules
+  107  npm install
+  108  sudo ./startFabric.sh 
+  109  cd Fabric/
+  110  ls
+  111  cd fabric-samples/
+  112  ls
+  113  cd fabcar/
+  114  ls
+  115  ./startFabric.sh 
+  116  docker ps
+  117  sudo docker ps
+  118  sudo ./startFabric.sh 
+  119  docker logs -f ca.example.com
+  120  dir
+  121  cd Fabric/
+  122  dir
+  123  cd fabric-samples/
+  124  cdcd..
+  125  cd -
+  126  dir
+  127  cd fabric-samples/
+  128  dir
+  129  cd fabcar
+  130  dir
+  131  sudo .\startFabric.sh
+  132  .\startFabric.sh
+  133  cd../
+  134  cd.. /
+  135  cd/
+  136  cd-
+  137  cd -
+  138  dir
+  139  cd Fabric/
+  140  dir
+  141  cd fabric-samples/fabcar && ls
+  142  docker rm -f $(docker ps -aq)
+  143  docker network prune
+  144  npm install -unsafe-perm
+  145  sudo apt-get install build-essential g++
+  146  sudo rm -r node_modules
+  147  sudo npm install
+  148  sudo ./startFabric.sh
+  149  sudo docker logs -f ca.example.com
+  150  cd Fabric/
+  151  cd fabric-samples/
+  152  dir
+  153  cd fabcar
+  154  cls
+  155  clear
+  156  node enrollAdmin.js
+  157  rm -rf node_modules
+  158  sudo rm -rf node_modules
+  159  clear
+  160  sudo rm -rf node_modulesnpm update
+  161  npm update
+  162  npm install
+  163  ./startFabric.sh
+  164  sudo ./startFabric.sh
+  165  sudo node enrollAdmin.js
+  166  sudo node registerUser.js
+  167  sudo fabric_client.getUserContext('user1', true);
+  168  sudo fabric_client.getUserContext('User1', true);
+  169  fabric_client.getUserContext('User1', true);
+  170  fabric_client.getUserContext(User1, true);
+  171  fabric_client.getUserContext('user1', true);
+  172  fabric_client.getUserContext\('user1', true\);
+  173  fabric_client.getUserContext\(user1, true\);
+  174  node query.js
+  175  - vi query.js
+  176  vi query.js
+  177  -invoke.js
+  178  vi -invoke.js
+  179  - vi invoke.js
+  180  invoke.js
+  181  vi invoke.js
+  182  node invoke.js
+  183  node query.js
+  184  docker logs -f ca.example.com
+  185  sudo docker logs -f ca.example.com
+  186  ditr
+  187  dir
+  188  cd Fabric/
+  189  dir
+  190  cd fabric-samples/
+  191  dir
+  192  sudo node enrollAdmin.js
+  193  cd fabcar
+  194  sudo node enrollAdmin.js
+  195  dir
+  196  node enrollAdmin.js
+  197  npm update
+  198  npm install
+  199  npm install grpc
+  200  npm install --global windows-build-tools
+  201  npm install grpc
+  202  ./startFabric.sh
+  203  sudo ./startFabric.sh
+  204  docker logs -f ca.example.com
+  205  sudo docker logs -f ca.example.com
+  206  dir
+  207  cd Fabric/
+  208  dir
+  209  cd fabric-samples/
+  210  dir
+  211  cd /fabcar && ls
+  212  cd fabcar
+  213  ls
+  214  sudo \.startFabric.sh
+  215  sudo ./startFabric.sh
+  216  sudo docker rm -f $(sudo docker ps -aq)
+  217  sudo docker network prune
+  218  cd Fabric
+  219  cd fabric-samples
+  220  cd chaincode
+  221  cd fabcar
+  222  go
+  223  sudo apt install golang-go
+  224  go
+  225  vi fabcar.go
+  226  cd Fabric/fabric-samples/chiancode/fabcar/go
+  227  cd Fabric
+  228  cd fabric-samples
+  229  cd chaincode
+  230  cd fabcar/
+  231  go
+  232  cls
+  233  clear
+  234  vi fabcar.go
+  235  cd go
+  236  vi fabcar.go
+  237  cd Fabric/
+  238  cd fabric-samples/
+  239  cd chaincode
+  240  cd fabcar/
+  241  cd go/
+  242  vi fabcar.go
+  243  sudo vi fabcar.go
+  244  - sudo docker logs -f
+  245  sudo docker logs -f ca.example.com
+  246  sudo docker logs -f
+  247  -sudo docker logs -f ca.example.com
+  248  sudo docker logs -f ca.example.com
+  249  cd Fabric/
+  250  cd fabric-samples/
+  251  cd fabric
+  252  cd fabcar
+  253  vi query.js
+  254  sudo node query.js
+  255  sudo ./startFabric.sh 
+  256  clear
+  257  sudo node query.js
+  258  sudo node enrollAdmin.js 
+  259  sudo node registerUser.js 
+  260  clear
+  261  sudo node query.js
+  262  vi invoke.js
+  263  sudo node invoke.js
+  264  vi invoke.js 
+  265  cd..
+  266  cd -
+  267  cd chaincode
+  268  cd fabcar/
+  269  go
+  270  cd go
+  271  vi fabcar.go
+  272  clear
+  273  vi fabcar.go
+  274  clear
+  275  vi fabcar.go 
+  276  clear
+  277  vi fabcar.go 
+  278  sudo docker logs -f ca.example.com
+  279  cd Fabric/
+  280  cd fabric-samples/
+  281  cd fabric
+  282  dir
+  283  cd fabca
+  284  cd fabcar
+  285  dir
+  286  vi startFabric.sh 
+  287  clear
+  288  sudo ./startFabric.sh 
+  289  sudo node enrollAdmin.js 
+  290  sudo node registerUser.js 
+  291  vi query.js
+  292  sudo node query.js 
+  293  clear
+  294  sudo node query.js 
+  295  node ./startFabric.sh 
+  296  vi ./startFabric.sh 
+  297  clear
+  298  sudo node ./startFabric.sh 
+  299  sudo ./startFabric.sh 
+  300  sudo node enrollAdmin.js 
+  301  sudo node registerUser.js 
+  302  sudo node query.js
+  303  -sudo docker logs -f ca.example.com
+  304  sudo docker logs -f ca.example.com
+  305  cd Fabric/
+  306  cd fabric-samples/
+  307  cd fabcar
+  308  sudo node ./startFabric.sh
+  309  vi ./startFabric.sh 
+  310  sudo .\startFabric.sh
+  311  dir
+  312  sudo ./startFabric.sh 
+  313  sudo node enrollAdmin.js 
+  314  sudo node registerUser.js 
+  315  sudo node query.js
+  316  vi query.js
+  317  sudo node query.js
+  318  clear
+  319  sudo node query.js
+  320  sudo ./startFabric.sh 
+  321  sudo node enrollAdmin.js 
+  322  sudo node registerUser.js 
+  323  sudo node query.js
+  324  dir
+  325  sudo docker logs -f ca.example.com
+  326  cd Fabric/
+  327  cd fabric-samples/
+  328  cd chaincode
+  329  cd..
+  330  cd -
+  331  cd fabcar
+  332  vi ./startFabric.sh 
+  333  clear
+  334  sudo ./startFabric.sh 
+  335  sudo node enrollAdmin.js 
+  336  sudo node registerUser.js 
+  337  vi query.js
+  338  sudo node query.js 
+  339  vi ./startFabric.sh 
+  340  sudo ./startFabric.sh 
+  341  sudo node query.js
+  342  sudo node enrollAdmin.js 
+  343  sudo node registerUser.js 
+  344  sudo node query.js 
+  345  vi invoke.js
+  346  clear
+  347  sudo node invoke.js 
+  348  sudo node query.js 
+  349  vi invoke.js 
+  350  clear
+  351  sudo node invoke.js 
+  352  suo node query.js 
+  353  clear
+  354  sudo node query.js 
+  355  vi query.js 
+  356  clear
+  357  sudo node query.js 
+  358  vi invoke.js
+  359  Error: Invalid Smart Contract function name
+  360  docker images | grep fabcar | awk '{print $2}' | docker rmi
+  361  sudo docker images | grep fabcar | awk '{print $2}' | docker rmi
+  362  vi ./startFabric.sh 
+  363  clear
+  364  sudo docker rm -f(sudo docker ps -aq)
+  365  sudo docker rm -f $(sudo docker ps -aq)
+  366  sudo docker network prune
+  367  clear
+  368  sudo ./startFabric.sh 
+  369  sudo node enrollAdmin.js 
+  370  sudo node registerUser.js 
+  371  sudo node query.js 
+  372  vi query.js 
+  373  sudo node query.js 
+  374  clear
+  375  sudo node query.js 
+  376  vi ./startFabric.sh 
+  377  clear
+  378  sudo docker rm -f $(sudo docker ps -aq)
+  379  sudo docker network prune
+  380  clear
+  381  sudo ./startFabric.sh 
+  382  sudo node enrollAdmin.js 
+  383  sudo node registerUser.js 
+  384  sudo node query.js 
+  385  vi query.js 
+  386  clear
+  387  sudo node query.js 
+  388  sudo docker logs -f
+  389  ca.example.com
+  390  sudo docker logs -f ca.example.com
+  391  sudo docker rm -f $(sudo docker ps -aq)
+  392  cd fabrid-samples
+  393  dir
+  394  cd Fabric/
+  395  cd fabric-samples/
+  396  cd fabcar
+  397  clear
+  398  sudo docker rm -f $(sudo docker ps -aq)
+  399  cd\
+  400  cd..
+  401  clear
+  402  sudo ./startFabric.sh 
+  403  sudo node enrollAdmin.js 
+  404  sudo node registerUser.js 
+  405  sudo node query.js 
+  406  sudo docker logs -f ca.example.com
+  407  cd Fabric/
+  408  dir
+  409  cd fabric-samples/
+  410  dir
+  411  cd fabcar
+  412  dir
+  413  vi ./startFabric.sh 
+  414  cls
+  415  dir
+  416  cd -
+  417  cd chaincode
+  418  clear
+  419  dir
+  420  cd fabcar/
+  421  cd go
+  422  dir
+  423  vi fabcar.go 
+  424  cd -
+  425  cd ..
+  426  cd -
+  427  cd ..
+  428  cd .
+  429  cd -
+  430  cd ..
+  431  dir/w
+  432  dir
+  433  cd fabcar
+  434  clear
+  435  sudo ./startFabric.sh 
+  436  http://localhost:3000/tfbc/requestLC
+  437  dir
+  438  cd hlf-trade-finance/
+  439  dir
+  440  cd tfbc-api/
+  441  dir
+  442  swagger.jsln
+  443  swagger.json
+  444  vi swagger.json
+  445  sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | sudo bash
+  446  source~./profile
+  447  source ~/.profile
+  448  nvm install v8.10.0
+  449  sudo chmod 777 ./.nvm
+  450  nvm install v8.10.0
+  451  nvm use v8.10.0
+  452  node -v
+  453  git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  454  sudo git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  455  cd hlf-trade-finance/
+  456  ./start.sh 
+  457  sudo ./start.sh
+  458  sudo ./setup.sh 
+  459  cd hlf-trade-finance/tfbc-api
+  460  cd tfbc-api/
+  461  sudo npm install
+  462  rm hfc-key-store/*
+  463  node enrollBankUser.js
+  464  sudo node enrollBankUser.js
+  465  dir
+  466  cd..
+  467  cd\
+  468  cd ..
+  469  dir/w
+  470  dir
+  471  rd hlf-trade-finance/
+  472  del hlf-trade-finance/
+  473  sudo git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  474  rm -R hlf-trade-finance/
+  475  sudo rm -R hlf-trade-finance/
+  476  dir
+  477  sudp git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  478  dir
+  479  cls
+  480  ls
+  481  clear
+  482  dir
+  483  git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  484  sudo git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  485  dir
+  486  node -v
+  487  git clone https://github.com/TSBlockchain/hlf-trade-finance.git
+  488  dir
+  489  dir hlf-trade-finance/
+  490  cd hlf-trade-finance/
+  491  sudo ./start.sh 
+  492  sudo ./setup.sh 
+  493  dir
+  494  cd tfbc-api/
+  495  mpm install
+  496  sudo npm install
+  497  clear
+  498  dir
+  499  rm hfc-key-store/*
+  500  dir
+  501  node enrollBankUser.js
+  502  npm install
+  503  node -v
+  504  clear
+  505  sudo apt-get install build-essential g++
+  506  sudo rm -r node_modules/
+  507  ls
+  508  npm install
+  509  node enrollBankUser.js [B
+  510  node -v
+  511  docker images
+  512  sudo docker images
+  513  docker rm -f $(docker ps -aq)
+  514  sudo docker rm -f $(docker ps -aq)
+  515  sudo docker rm -f $(sudo docker ps -aq)
+  516  sudo docker network prune
+  517  sudo docker volume  prune
+  518  sudo docker images
+  519  cd..
+  520  cd ..
+  521  sudo ./start.sh 
+  522  sudo ./setup.sh 
+  523  dir
+  524  cd tfbc-api/
+  525  dir
+  526  node enrollBankUser.js
+  527  nod enrollBuyerUser.js
+  528  node enrollBuyerUser.js
+  529  node enrollSellerUser.js
+  530  npm start
+  531  dir
+  532  cd hlf-trade-finance/
+  533  dir
+  534  cd chaincode/
+  535  dir
+  536  cd tfbc
+  537  dir
+  538  cd go/
+  539  dir
+  540  ls
+  541  dir
+  542  clear
+  543  dir
+  544  vi tfbc.go
+  545  cd ..
+  546  git clone https://github.com/sumadhava/insurance-claim.git
+  547  dir
+  548  cd insurance-claim/
+  549  dir
+  550  sudo ./start.sh 
+  551  sudo ./setup.sh 
+  552  go
+  553  dir
+  554  cd tfbc-api/
+  555  cd..
+  556  cd ch
+  557  cd chaincode
+  558  cd ..
+  559  cd chaincode/
+  560  dir
+  561  cd tfbc/
+  562  dir
+  563  cd go
+  564  dir
+  565  go build 
+  566  go get "github.com/hyperledger/fabric/core/chaincode/shim"
+  567  go get github.com/hyperledger/fabric/core/chaincode/shim
+  568  export GOPATH=$PWD/../
+  569  go get github.com/hyperledger/fabric/core/chaincode/shim
+  570  ls ../../hyperledger/
+  571  ls ../../
+  572  ls ../../hyperledger/
+  573  export GOPATH=$PWD/../../hyperledger/
+  574  go get github.com/hyperledger/fabric/core/chaincode/shim
+  575  ls
+  576  export GOPATH=~/go/
+  577  go get github.com/hyperledger/fabric/core/chaincode/shim
+  578  export GOPATH=~/go/
+  579  mkdir -p $GOPATH/
+  580  ls $GOPATH/
+  581  export GOPATH=~/insurance-claim/chaincode/
+  582  go build
+  583  export GOPATH=~/go/
+  584  cd $GOPATH/src/github.com
+  585  ls
+  586  cd hyperledger/
+  587  ls
+  588  ls fabric/
+  589  cd
+  590  cd insurance-claim/
+  591  ls
+  592  cd chaincode/tfbc/go/
+  593  go build
+  594  cd /home/paperspace/go//src/github.com/hyperledger/
+  595  rm -rf fabric/
+  596  ls
+  597  git clone http://gerrit.hyperledger.org/r/fabric.git
+  598  rm -rf fabric/
+  599  sudo git clone http://gerrit.hyperledger.org/r/fabric.git
+  600  cd ~/insurance-claim/chaincode/tfbc/go/
+  601  go build
+  602  sudo go build
+  603  go build
+  604  go get "github.com/hyperledger/fabric/core/chaincode/shim
+  605  "
+  606  go get github.com/hyperledger/fabric/core/chaincode/shim
+  607  sudo go get github.com/hyperledger/fabric/core/chaincode/shim
+  608  sudo export GOPATH=~/go/
+  609  go get github.com/hyperledger/fabric/core/chaincode/shim
+  610  sudo export GOPATH=~/go/
+  611  sudo su
+  612  sudo setenv GOPATH=~/go/
+  613  sudo su
+  614  go build
+  615  ls /home/paperspace/go//src/github.com/hyperledger/
+  616  ls /home/paperspace/go//src/github.com/hyperledger/fabric/
+  617  ls /home/paperspace/go//src/github.com/hyperledger/fabric/core/chaincode/
+  618  git status
+  619  cd
+  620  chmod 777 **
+  621  sudo chmod 777 ***
+  622  git status
+  623  cd insurance-claim/chaincode/tfbc/go/
+  624  go get github.com/hyperledger/fabric/core/chaincode/shim
+  625  cd
+  626  ls -al
+  627  go version
+  628  echo $GOPATH
+  629  go get github.com/hyperledger/fabric/protos/peer
+  630  cd /go/src/github.com/hyperledger/
+  631  rm -rf fab
+  632  ls
+  633  cd ./go/src/github.com/hyperledger/
+  634  rm -rf fabric/
+  635  sudo rm -rf fabric/
+  636  go get github.com/hyperledger/fabric/
+  637  ls
+  638  cd
+  639  cd insurance-claim/chaincode/tfbc/go/
+  640  go build
+  641  go get /github.com/hyperledger/fabric/vendor/context
+  642  cd
+  643  cd hlf-trade-finance/chaincode/hyperledger
+  644  ls 
+  645  cd 
+  646  cd go/src/github.com/hyperledger/
+  647  rm -rf fabric/
+  648  ls
+  649  cd 
+  650  cd hlf-trade-finance/chaincode/hyperledger/
+  651  cp -r fabric/* ~/go/src/github.com/hyperledger/
+  652  cd
+  653  cd insurance-claim/chaincode/tfbc/go/
+  654  go build
+  655  go get github.com/hyperledger/fabric
+  656  go build
+  657  ls /home/paperspace/go//src/github.com/hyperledger/fabric/vendor/
+  658  go get github.com/hyperledger/fabric/vendor/plugin
+  659  go get -u github.com/hyperledger/fabric
+  660  dir
+  661  go build
+  662  go get golang.org/dl/go1.10.7
+  663  go1.10.7 download
+  664  ls
+  665  cd /home/paperspace/go//
+  666  ls
+  667  cd src/g
+  668  cd src/
+  669  ls
+  670  cd golang.org/
+  671  ls
+  672  cd dl/
+  673  ls
+  674  go1.9 download
+  675  cd go1.9
+  676  ls
+  677  go version
+  678  cd
+  679  sudo add-apt-repository ppa:gophers/archive
+  680  sudo apt-get update
+  681  sudo apt-get install golang-1.11-go
+  682  go version
+  683  go env
+  684  export GOROOT=/usr/lib/go-1.11
+  685  export GOTOOLDIR=/usr/lib/go-1.11/pkg/tool/linux_amd64
+  686  go version
+  687  echo $GOROOT
+  688  cd insurance-claim/chaincode/tfbc/go/
+  689  go build
+  690  cat tfbc.go 
+  691  go build
+  692  nano tfbc.go 
+  693  export GOTOOLDIR=/usr/lib/go-1.6/pkg/tool/linux_amd64
+  694  export GOROOT=/usr/lib/go-1.6
+  695  go build
+  696  sudo rm usr/local/go
+  697  sudo rm usr/local/go/
+  698  sudo rm /usr/local/go
+  699  sudo rm -rf /usr/local/go
+  700  cd
+  701  sudo nano .profile
+  702  nano .profile
+  703  o version
+  704  go version
+  705  cat /etc/profile
+  706  rm -rm go/
+  707  rm -rf go/
+  708  ls
+  709  go version
+  710  cd insurance-claim/
+  711  sudo curl -sSL http://bit.ly/2ysbOFE | bash -s 1.3.0
+  712  ./byfn.sh down
+  713  sudo ./byfn.sh down
+  714  sudo docker rm -f $(docker ps -aq)
+  715  sudo docker network prune
+  716  sudo npm install
+  717  cd tfbc-api/
+  718  dir
+  719  cd..
+  720  dir
+  721  cd ..
+  722  sudo ./start.sh 
+  723  ll
+  724  cd crypto-config/
+  725  LL
+  726  ll
+  727  docker ps -a
+  728  sudo docker ps -a
+  729  ls ~/Fabric/fabric-samples/
+  730  cp -r ~/Fabric/fabric-samples/bin ../
+  731  ls ../bin/
+  732  ls
+  733  cd ../
+  734  ls
+  735  vi configtx.yaml 
+  736  clear
+  737  sudo docker stop $(sudo docker ps -aq)
+  738  sudo docker rm -f $(sudo docker ps -aq)
+  739  sudo docker network prune
+  740  sudo docker volume prone
+  741  sudo docker rmi $(sudo docker images | grep dev | awk '{print $3}')
+  742  clear
+  743  sudo ./start.sh 
+  744  sudo ./setup.sh 
+  745  cd tfbc-api/
+  746  npm install
+  747  sudo npm install
+  748  rm hfc-key-store/*
+  749  node enrollBankUser.js
+  750  clear
+  751  node enrollHospitalUser.js 
+  752  sudo o
+  753  sudo docker logs -f ca.hospital.tfbc.com
+  754  ls
+  755  dir
+  756  sudo node enrollHospitalUser.js
+  757  clear
+  758  cd ../
+  759  ls
+  760  ls crypto-config/peerOrganizations/
+  761  ./generate.sh 
+  762  sudo rm -rf crypto-config
+  763  ls
+  764  ./generate.sh 
+  765  vi generate.sh 
+  766  ./generate.sh 
+  767  ls crypto-config/peerOrganizations/
+  768  ls crypto-config/peerOrganizations/company.tfbc.com/ca/
+  769  vi docker-compose.yml 
+  770  ls crypto-config/peerOrganizations/hospital.tfbc.com/ca/
+  771  vi docker-compose.yml 
+  772  ls crypto-config/peerOrganizations/provider.tfbc.com/ca/
+  773  vi docker-compose.yml 
+  774  ls
+  775  vi setup.sh 
+  776  ls config
+  777  clear
+  778  sudo ./stop.sh 
+  779  sudo ./start.sh 
+  780  sudo ./setup.sh 
+  781  docker ps
+  782  sudo docker ps
+  783  cleae
+  784  clear
+  785  cd tfbc-api/
+  786  npm install
+  787  rm hfc-key-store/*
+  788  node enrollHospitalUser.js
+  789  docker ps
+  790  sudo docker ps
+  791  node enrollHospitalUser.js
+  792  sudo docker ps
+  793  node enrollHospitalUser.js
+  794  node enrollCompanyUser.js
+  795  ls
+  796  sudo node enrollProviderUser.js
+  797  npm build
+  798  sudo npm rebuild
+  799  sudo docker ps
+  800  node enrollProviderUser.js
+  801  rm -rf hfc-key-store/
+  802  node enrollProviderUser.js
+  803  vi enrollProviderUser.js 
+  804  node enrollProviderUser.js
+  805  vi enrollProviderUser.js 
+  806  node enrollProviderUser.js
+  807  vi enrollHospitalUser.js 
+  808  sudo docker ps
+  809  vi enrollHospitalUser.js 
+  810  dir
+  811  vi enrollInsuranceCompanyUser.js 
+  812  node enrollInsuranceCompanyUser.js 
+  813  node enrollHospitalUser.js 
+  814  npm start
+  815  clear
+  816  sudo npm start
+  817  npm start
+  818  docker ps
+  819  sudo docker ps
+  820  cd..
+  821  cd ..
+  822  cd chaincode/
+  823  dir
+  824  cd tfbc/
+  825  cd go/
+  826  dir
+  827  vi tfbc.go 
+  828  clear
+  829  cd ..
+  830  cd tfbc-api/
+  831  dir
+  832  npm start
+  833  history > allCmd.txt

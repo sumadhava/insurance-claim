@@ -9,9 +9,9 @@ var TFBC = require("./FabricHelper")
 
 
 // Request LC
-router.post('/requestLC', function (req, res) {
+router.post('/requestClaim', function (req, res) {
 
-TFBC.requestLC(req, res);
+TFBC.requestClaim(req, res);
 
 });
 

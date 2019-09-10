@@ -223,7 +223,7 @@
                     "type": "string",
                     "description": "Diagnos Code"
                 },
-                "Procedure Code": {
+                "ProcedureCode": {
                     "type": "string",
                     "description": "Procedure Code"
                 },

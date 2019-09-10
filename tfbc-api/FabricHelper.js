@@ -32,7 +32,7 @@ var tx_id = null;
 
 
 // // Request LC by Buyer
-function requestLC(req, res) {
+function requestClaim(req, res) {
 
 //Init fabric client
 var fabric_client = new Fabric_Client();
@@ -61,7 +61,7 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 	fabric_client.setCryptoSuite(crypto_suite);
 
 	// get the enrolled user from persistence, this user will sign all requests
-	return fabric_client.getUserContext('buyerUser', true);
+	return fabric_client.getUserContext('companyUser', true);
 }).then((user_from_store) => {
 	if (user_from_store && user_from_store.isEnrolled()) {
 		console.log('Successfully loaded buyerUser from persistence');
@@ -77,13 +77,17 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 	// createCar chaincode function - requires 5 args, ex: args: ['CAR12', 'Honda', 'Accord', 'Black', 'Tom'],
 	// changeCarOwner chaincode function - requires 2 args , ex: args: ['CAR10', 'Dave'],
 	// must send the proposal to endorsing peers
+	console.log("REQ BODY:", req.body)
 	var request = {chaincodeId: 'tfbccc',
-		fcn: 'requestLC',
-		args: [req.body.lcId, req.body.expiryDate, req.body.buyer, req.body.bank, req.body.seller, req.body.amount],
+		fcn: 'requestClaim',
+		//args: [req.body.lcId, req.body.expiryDate, req.body.buyer, req.body.bank, req.body.seller, req.body.amount],
+		args: [""+req.body.ClaimID+"", req.body.PolicyNumber, req.body.EntryDate, req.body.InsuranceCompany, req.body.PlaceOfService, req.body.ProviderName, req.body.ClaimAmount, req.body.DateOfService, req.body.DiagnosCode, req.body.ProcedureCode, req.body.TypeOfService],
+
 		chainId: 'tfbcchannel',
 		txId: tx_id};
 
 	// send the transaction proposal to the peers
+	console.log("REQUEST: ",request)
 	return channel.sendTransactionProposal(request);
 }).then((results) => {
 	var proposalResponses = results[0];
@@ -118,7 +122,7 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 
 		// get an eventhub once the fabric client has a user assigned. The user
 		// is required bacause the event registration must be signed
-		let event_hub = fabric_client.newEventHub();
+		/*let event_hub = fabric_client.newEventHub();
 		event_hub.setPeerAddr('grpc://localhost:8053');
 
 		// using resolve the promise so that result status may be processed
@@ -151,6 +155,7 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 				reject(new Error('There was a problem with the eventhub ::'+err));
 			});
 		});
+		*/
 		promises.push(txPromise);
 
 		return Promise.all(promises);
@@ -161,6 +166,7 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 }).then((results) => {
 	console.log('Send transaction promise and event listener promise have completed');
 	// check the results in the order the promises were added to the promise all list
+	console.log(results);
 	if (results && results[0] && results[0].status === 'SUCCESS') {
 		console.log('Successfully sent transaction to the orderer.');
 	} else {
@@ -621,7 +627,7 @@ function getLCHistory(req, res){
 }
 
 let tfbc = {
-	requestLC: requestLC,
+	requestClaim: requestClaim,
 	issueLC: issueLC,
 	acceptLC: acceptLC,
 	getLC: getLC,
